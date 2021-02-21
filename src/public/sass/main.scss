@@ -1,0 +1,32 @@
+// nuuel - version 1.0.0
+
+
+// Componentes
+
+// signin
+@import "component/signin";
+// signup
+@import "component/signup";
+// normalize 
+@import "component/normalize";
+
+:root {
+    --primary: #1d1d1d;
+    --secundary: #111111;
+    --tercero: #1f1f1f;
+    --four: #FA2840;
+    --five: #E0243A;
+    --six: #BA1E30;
+    --grisoscuro: #4b4b4b;
+    --grisclaro: #eeeeee;
+    --gris: #dddddd;
+    --blanco: #ffffff;
+    --background: #0c0c0c;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

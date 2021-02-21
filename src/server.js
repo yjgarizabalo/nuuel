@@ -13,6 +13,7 @@ app.set('view engine', 'ejs')
 app.use(morgan('dev'))
 
 // rutas
+// app.use(require('./routes/index.routes'))
 app.use(require('./routes/index.routes'))
 app.use(express.urlencoded({extended: false}))
 
