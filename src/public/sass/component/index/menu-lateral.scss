@@ -1,0 +1,41 @@
+//* ---- Menu lateral - nuuel ---- */
+.manu-lateral {
+    grid-area: menu;
+    background: var(--secundary);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 15px 15px !important;
+    color: var(--blanco);
+    min-width: 800px;
+}
+  
+.menu-lateral a:hover {
+    background: var(--primary);
+}
+
+.menu-lateral a.active {
+    background: var(--primary);
+    font-weight: bold;
+}
+
+.menu-lateral .fas {
+    margin-right: 32px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-lateral a.active .fas {
+    color: var(--four);
+}
+
+.menu-lateral hr {
+    margin: 20px 0;
+    border: 1px solid var(--primary);
+}
+  
+
+//* ---- Fin menu lateral - nuuel ---- */

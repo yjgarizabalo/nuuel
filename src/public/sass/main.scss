@@ -1,10 +1,11 @@
 // nuuel - version 1.0.0
 
-
 // Componentes
 
 // index - header
 @import "component/index/header.scss";
+// index - menu lateral
+@import "component/index/menu-lateral.scss";
 // signin
 @import "component/signin";
 // signup
@@ -59,12 +60,9 @@ a {
     transition: all .3s ease;
 }
 
-//* ---- Menu lateral - nuuel ---- */
-.manu-lateral{
-    grid-area: menu;
-    background: var(--secundary);
+.contenedor.active {
+    grid-template-columns: minmax(270px, 18%)  auto;
 }
-//* ---- Fin menu lateral - nuuel ---- */
 
 //* ---- Main - nuuel ---- */
 .main {
