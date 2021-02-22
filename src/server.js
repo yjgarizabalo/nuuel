@@ -18,7 +18,7 @@ app.use(require('./routes/index.routes'))
 app.use(express.urlencoded({extended: false}))
 
 // archivos estaticos
-
+app.use(express.static(path.join(__dirname + '/public')))
 
 // Servidor
 app.listen(app.get('port'), () => {

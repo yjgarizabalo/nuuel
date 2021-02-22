@@ -3,6 +3,8 @@
 
 // Componentes
 
+// index - header
+@import "component/index/header.scss";
 // signin
 @import "component/signin";
 // signup
@@ -30,3 +32,43 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-size     : 0.98em;
+    letter-spacing: 0.25px;
+    line-height   : 20px;
+    color         : var(--blanco);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,29,29,1) 50%, rgba(39,39,39,1) 100%);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: minmax(50px, 50px) auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header header"
+                         "menu contenido";
+    transition: all .3s ease;
+}
+
+//* ---- Menu lateral - nuuel ---- */
+.manu-lateral{
+    grid-area: menu;
+    background: var(--secundary);
+}
+//* ---- Fin menu lateral - nuuel ---- */
+
+//* ---- Main - nuuel ---- */
+.main {
+    grid-area: contenido;
+    background: var(--tercero);
+}
+//* ---- Fin main - nuuel ---- */

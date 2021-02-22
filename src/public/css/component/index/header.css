@@ -1,0 +1,103 @@
+.header {
+  grid-area: header;
+  background: var(--background);
+  padding: 0 0px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 20px;
+  grid-template-areas: "logo busqueda iconos"; }
+
+.header .contenedor-logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center; }
+
+.header .contenedor-logo .boton-menu {
+  border: none;
+  padding: 10px;
+  background: none;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  color: var(--blanco); }
+
+.header .contenedor-logo .logo {
+  position: relative;
+  top: 2px; }
+
+.header .botones-header {
+  grid-area: iconos;
+  display: flex;
+  align-items: center; }
+
+.header .botones-header button {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  padding: 7px 12px;
+  border-radius: 100px;
+  margin-right: 20px;
+  color: var(--blanco);
+  margin-right: 4px;
+  cursor: pointer; }
+
+.header .contenedor-logo .boton-menu:hover {
+  background: var(--primary); }
+
+.header .barra-busqueda {
+  grid-area: busqueda;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.header .barra-busqueda input {
+  background: var(--primary);
+  color: var(--blanco);
+  min-width: 60%;
+  padding: 0 15px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid var(--grisoscuro);
+  font-weight: 16px;
+  border-radius: 3px 0 0 3px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; }
+
+.header .barra-busqueda button {
+  height: 35px;
+  border: 1px solid var(--grisoscuro);
+  border-left: none;
+  color: #545454;
+  padding: 0 25px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 0 3px 3px 0px; }
+
+.header .barra-busqueda button:hover {
+  background: var(--primary); }
+
+.header .botones-header {
+  grid-area: iconos;
+  display: flex;
+  align-items: center; }
+
+.header .botones-header button {
+  background: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 17px;
+  padding: 7px 12px;
+  border-radius: 100px;
+  margin-right: 20px;
+  color: var(--blanco);
+  margin-right: 4px;
+  cursor: pointer; }
+
+.header .botones-header button:hover {
+  background: var(--primary); }

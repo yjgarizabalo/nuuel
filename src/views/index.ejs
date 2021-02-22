@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
     <title>nuuel</title>
 </head>
 <body>
-    <h1>Bienvenidos nuuel</h1>
+    <div class="contenedor" id="contenedor">
+        <header class="header">
+            <div class="contenedor-logo">
+                <button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
+                <a href="/" class="logo"><img src="/img/logo-nuuel.svg" alt="logo-nuuel" width="110"></a>
+            </div>
+            <div class="barra-busqueda" title="Buscar">
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                <button class="boton-buscar" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="botones-header">
+                <button><i class="fas fa-ellipsis-v"></i></button>
+                <button><i class="fa fa-bell"></i></button>
+                <button><i class="fas fa-user-astronaut"></i></button>
+            </div>
+        </header>
+        <nav class="manu-lateral"></nav>
+        <main class="main"></main>
+    </div>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/6807ebaf14.js" crossorigin="anonymous"></script>
 </body>
 </html>
